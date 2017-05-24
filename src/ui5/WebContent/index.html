@@ -1,0 +1,41 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv='Content-Type' content='text/html;charset=UTF-8' />
+    <title>FeatureToggles</title>
+    <link rel="icon" href="FeatureToggles/img/switch24.png">
+    <!--src="https://sapui5.hana.ondemand.com/resources/sap-ui-core.js" -->
+    <script src="resources/sap-ui-core.js"
+            id="sap-ui-bootstrap"
+            data-sap-ui-language="DE"
+            data-sap-ui-preload="sync"
+            data-sap-ui-theme="sap_bluecrystal"
+            data-sap-ui-xx-bindingsyntax="complex"
+            data-sap-ui-libs="sap.m"
+            data-sap-ui-resourceroots='{
+                                         "FeatureToggles": "./FeatureToggles"
+                                       }'>
+    </script>
+    <script src="FeatureToggles/view/Root.controller.js"></script>
+    <script>
+        if ($.sap.getUriParameters().get("mock")) {
+            $.sap.require("sap.ui.core.util.MockServer");
+            var oMockServer = new sap.ui.core.util.MockServer({
+                rootUri: "",
+                requests: [
+                    { method: "GET", path: "/sap/bc/sy_feature/featurelist\.json.*", response: function (xhr) { xhr.respondFile(200, {}, "FeatureToggles/testdata/featurelist.json"); } },
+                ]
+            }).start();
+        }
+
+        var oComponent = new sap.ui.core.ComponentContainer({
+            name: "FeatureToggles",
+            settings: {}
+        });
+        oComponent.placeAt("body");
+    </script>
+</head>
+<body class="sapUiBody" id="body" role="application">
+</body>
+</html>

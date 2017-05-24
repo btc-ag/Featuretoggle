@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_DTEL" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <DD04V>
+    <ROLLNAME>Z_SY_FEATURECLASSNAME</ROLLNAME>
+    <DDLANGUAGE>D</DDLANGUAGE>
+    <HEADLEN>06</HEADLEN>
+    <SCRLEN1>06</SCRLEN1>
+    <SCRLEN2>14</SCRLEN2>
+    <SCRLEN3>21</SCRLEN3>
+    <DDTEXT>Klassenname einer Feature-Toggle-Klasse</DDTEXT>
+    <REPTEXT>Klasse</REPTEXT>
+    <SCRTEXT_S>Klasse</SCRTEXT_S>
+    <SCRTEXT_M>Feature-Klasse</SCRTEXT_M>
+    <SCRTEXT_L>Feature-Toggle-Klasse</SCRTEXT_L>
+    <DTELMASTER>D</DTELMASTER>
+    <DATATYPE>CHAR</DATATYPE>
+    <LENG>000061</LENG>
+    <OUTPUTLEN>000061</OUTPUTLEN>
+   </DD04V>
+   <TPARA/>
+  </asx:values>
+ </asx:abap>
+</abapGit>

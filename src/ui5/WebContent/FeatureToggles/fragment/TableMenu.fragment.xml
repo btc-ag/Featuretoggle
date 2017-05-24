@@ -1,0 +1,12 @@
+﻿<core:FragmentDefinition
+	xmlns="sap.m"
+	xmlns:core="sap.ui.core"
+	xmlns:u="sap.ui.unified">
+  <u:Menu
+    itemSelect="handleMenuItemPress">
+    <u:MenuItem
+      id = "MenuAlleAus"
+      text="Alle Schalter deaktivieren"
+      icon="sap-icon://stop"/>
+  </u:Menu>
+</core:FragmentDefinition>

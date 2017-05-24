@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_TTYP" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <DD40V>
+    <TYPENAME>Z_SY_T_FEATURENAME</TYPENAME>
+    <DDLANGUAGE>D</DDLANGUAGE>
+    <ROWTYPE>Z_SY_FEATURENAME</ROWTYPE>
+    <ROWKIND>E</ROWKIND>
+    <DATATYPE>CHAR</DATATYPE>
+    <LENG>000061</LENG>
+    <ACCESSMODE>T</ACCESSMODE>
+    <KEYDEF>T</KEYDEF>
+    <KEYKIND>N</KEYKIND>
+    <DDTEXT>Liste von Features</DDTEXT>
+   </DD40V>
+   <DD42V/>
+   <DD43V/>
+  </asx:values>
+ </asx:abap>
+</abapGit>

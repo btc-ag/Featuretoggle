@@ -1,0 +1,33 @@
+﻿<core:FragmentDefinition
+	xmlns="sap.m"
+	xmlns:core="sap.ui.core">
+  <ViewSettingsDialog
+		confirm="handleViewSettingsConfirm">
+    <sortItems>
+      <ViewSettingsItem text="Klasse"         key="SO_CLASS" />
+      <ViewSettingsItem text="Feature"        key="SO_NAME"  selected="true"  />
+      <ViewSettingsItem text="Datum"          key="SO_DATE" />
+      <ViewSettingsItem text="Abhängigkeiten" key="SO_DEPENDENCIES" />
+      <ViewSettingsItem text="Aktuell"        key="SO_CURRENTSTATE" />
+    </sortItems>
+    
+    <groupItems>
+      <ViewSettingsItem text="Klasse"  key="GR_CLASS"  selected="true" />
+      <ViewSettingsItem text="Datum"   key="GR_DATE" />
+      <ViewSettingsItem text="Aktuell" key="GR_CURRENTSTATE" />
+    </groupItems>
+
+    <filterItems>
+      <ViewSettingsCustomItem  id="idCustomFilterItemFrom"  text="Ab Datum"   key="dateFrom">
+        <customControl>
+          <DatePicker id="DPFROM" valueFormat="yyyyMMdd" placeholder="Datum eingeben ..." change="handleChange" class="sapUiSmallMarginBottom" />
+        </customControl>
+      </ViewSettingsCustomItem>      
+      <ViewSettingsCustomItem   id="idCustomFilterItemTo" text="Bis Datum" key="dateTo">
+        <customControl>
+          <DatePicker id="DPTO" valueFormat="yyyyMMdd" placeholder="Datum eingeben ..." change="handleChange" class="sapUiSmallMarginBottom" />
+        </customControl>
+      </ViewSettingsCustomItem>
+    </filterItems>
+  </ViewSettingsDialog>
+</core:FragmentDefinition>

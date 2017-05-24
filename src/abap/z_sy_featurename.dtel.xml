@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_DTEL" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <DD04V>
+    <ROLLNAME>Z_SY_FEATURENAME</ROLLNAME>
+    <DDLANGUAGE>D</DDLANGUAGE>
+    <HEADLEN>07</HEADLEN>
+    <SCRLEN1>07</SCRLEN1>
+    <SCRLEN2>07</SCRLEN2>
+    <SCRLEN3>07</SCRLEN3>
+    <DDTEXT>Name eines Features</DDTEXT>
+    <REPTEXT>Feature</REPTEXT>
+    <SCRTEXT_S>Feature</SCRTEXT_S>
+    <SCRTEXT_M>Feature</SCRTEXT_M>
+    <SCRTEXT_L>Feature</SCRTEXT_L>
+    <DTELMASTER>D</DTELMASTER>
+    <DATATYPE>CHAR</DATATYPE>
+    <LENG>000061</LENG>
+    <OUTPUTLEN>000061</OUTPUTLEN>
+   </DD04V>
+   <TPARA/>
+  </asx:values>
+ </asx:abap>
+</abapGit>

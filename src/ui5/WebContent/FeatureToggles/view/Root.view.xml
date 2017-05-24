@@ -1,0 +1,73 @@
+﻿<mvc:View xmlns:mvc="sap.ui.core.mvc" xmlns:core="sap.ui.core" xmlns="sap.m" xmlns:l="sap.ui.layout" controllerName="FeatureToggles.view.Root">
+  <Shell>
+    <App>
+      <Page title="Feature Toggles">
+        <headerContent>
+          <l:HorizontalLayout class="sapUiSmallMargin" >
+            <Button icon="sap-icon://decline" tooltip="Alle Filter löschen" press=".handleClearAllFilters"/>
+            <ToolbarSeparator/>
+            <SearchField id="SearchField" placeholder="Liste filtern" liveChange="._onFilterInputChange"/>
+            <Button tooltip="View Settings" icon="sap-icon://drop-down-list" press=".handleViewSettingsDialogButtonPressed" />
+          </l:HorizontalLayout>
+        </headerContent>
+        <Table id="table" items="{ path: '/DATA', sorter:{path:'CLASS', descending:false, group:true}, groupHeaderFactory: '._getGroupHeader'}" inset="false" mode="SingleSelectMaster" headerDesign="Plain" >
+                   
+          <infoToolbar>
+            <Toolbar
+              id="vsdFilterBar"
+              active="true"
+              visible="false"
+              press=".handleViewSettingsDialogButtonPressed">
+              <Label id="vsdFilterLabel" text="?" />
+            </Toolbar>
+          </infoToolbar>
+          
+          <columns>
+            <Column>
+              <Text text="Feature" />
+            </Column>
+            <Column width="80px">
+              <Text text="Datum" />
+            </Column>
+            <Column>
+              <Text text="Abhängigkeiten"/>
+            </Column>
+            <Column width="80px">
+              <Text text="Aktuell"/>
+            </Column>
+            <Column width="80px">
+              <!--<Text text="Neuer Zustand"/>   -->
+              <Link text="Zustand" tooltip="Neuer Zustand" press=".handleZustandButtonPressed"/>
+            </Column>
+            <!--<Column width="240px">
+              <Text text="Später aktivieren"/>
+            </Column>-->
+          </columns>
+          <ColumnListItem>
+            <cells>
+              <ObjectIdentifier title="{NAME}" text="{DESCRIPTION}"/>
+              <Label text="{path: 'DATE', type:'._oDate'}" />
+              <l:HorizontalLayout content="{DEPENDENCIES}" allowWrapping="true">
+                <Button text="{NAME}" tooltip="{CLASS}=>{NAME}" type="Transparent" press="._onDependencyPress"/>
+              </l:HorizontalLayout>
+              <!--<Text text="{ path: 'DEPENDENCIES', formatter: '.formatDependenciesColumnText' }"/>-->
+              <Text text="{= ${CURRENTSTATE} ? 'EIN': 'AUS' }" />
+              <Switch state="{NewState}" change=".featureActiveSwitchChanged" />
+              <!--<l:HorizontalLayout>
+                <DateTimeInput dateValue="{NewActivationTime}" visible="{= ${NewState} &amp;&amp; ${CURRENTSTATE} !== ${NewState} }" placeholder="Aktivierungszeitpunkt vorgeben (optional)" type="DateTime" change=".featureActivationDateChanged"/>
+                <Button icon="sap-icon://sys-cancel-2" press=".clearActivationTime" visible="{= !!${NewActivationTime} }" />
+              </l:HorizontalLayout>-->
+            </cells>
+          </ColumnListItem>
+        </Table>
+        <footer>
+          <Toolbar>
+            <ToolbarSpacer/>
+            <Button text="Speichern" type="Accept" press=".savePressed"/>
+            <Button text="Zurücksetzen" type="Reject" press=".resetPressed"/>
+          </Toolbar>
+        </footer>
+      </Page>
+    </App>
+  </Shell>
+</mvc:View>

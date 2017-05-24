@@ -1,0 +1,386 @@
+{
+  "DATA": [
+    {
+      "CLASS": "/EAS/ABBI_FEATURES",
+      "NAME": "AR_8571_KAUFM_RUND",
+      "DESCRIPTION": "A8571_Kaufm_rund",
+      "DEPENDENCIES": [ ],
+      "CURRENTSTATE": true,
+      "DATE": ""
+    },
+    {
+      "CLASS": "/EAS/ABBI_FEATURES",
+      "NAME": "AR_REBEHREN_IMA",
+      "DESCRIPTION": "Schalter für IMA Änderungen",
+      "DEPENDENCIES": [ ],
+      "CURRENTSTATE": false,
+      "DATE": ""
+    },
+    {
+      "CLASS": "/EAS/ABBI_FEATURES",
+      "NAME": "AR_ZEZAV_BETR_KZ",
+      "DESCRIPTION": "ZEZAV Betriebs_kennz.",
+      "DEPENDENCIES": [ ],
+      "CURRENTSTATE": true,
+      "DATE": ""
+    },
+    {
+      "CLASS": "/EAS/ABBI_FEATURES",
+      "NAME": "ST_EINSP_NKV",
+      "DESCRIPTION": "NKV für Einspeiser",
+      "DEPENDENCIES": [ ],
+      "CURRENTSTATE": false,
+      "DATE": ""
+    },
+    {
+      "CLASS": "/EAS/ANNEX_FEATURE",
+      "NAME": "ABLESE_KZ_VERTRAGSANLAGE",
+      "DESCRIPTION": "AGILAT-9844: Ableserelevanz des Zählwerkes bei Vertragsanlage setzen",
+      "DEPENDENCIES": [ ],
+      "CURRENTSTATE": false,
+      "DATE": ""
+    },
+    {
+      "CLASS": "/EAS/ANNEX_FEATURE",
+      "NAME": "ERZEUGE_MSC_Z27",
+      "DESCRIPTION": "AGILAT-10282: Versand Bewegungsdaten im Kalenderjahr vor Lieferbeginn",
+      "DEPENDENCIES": [ ],
+      "CURRENTSTATE": false,
+      "DATE": ""
+    },
+    {
+      "CLASS": "/EAS/ANNEX_FEATURE",
+      "NAME": "GLEICHE_WAHREABL_VOM_NETZ",
+      "DESCRIPTION": "AGILAT-9847: Übernahme von identischen wahren Netzzählerständen",
+      "DEPENDENCIES": [ ],
+      "CURRENTSTATE": false,
+      "DATE": ""
+    },
+    {
+      "CLASS": "/EAS/ANNEX_FEATURE",
+      "NAME": "GTYP_AKT_4_GW",
+      "DESCRIPTION": "AGILAT-7538: Gerätetyp aktualiserung für STÄ Geräteweschel",
+      "DEPENDENCIES": [
+        {
+          "CLASS": "/EAS/ANNEX_FEATURE",
+          "NAME": "SAVE_GTYP_BE_AKTIV"
+        },
+        {
+          "CLASS": "/EAS/ANNEX_FEATURE",
+          "NAME": "SAVE_GTYP_AKTIV"
+        }
+      ],
+      "CURRENTSTATE": false,
+      "DATE": ""
+    },
+    {
+      "CLASS": "/EAS/ANNEX_FEATURE",
+      "NAME": "IMA",
+      "DESCRIPTION": "IMA Schalter - Annex Team",
+      "DEPENDENCIES": [ ],
+      "CURRENTSTATE": false,
+      "DATE": ""
+    },
+    {
+      "CLASS": "/EAS/ANNEX_FEATURE",
+      "NAME": "SAVE_GTYP_AKTIV",
+      "DESCRIPTION": "AGILAT-6674: Anpassung Mapping für Geräteinformationen aus Netzanmeldung",
+      "DEPENDENCIES": [ ],
+      "CURRENTSTATE": false,
+      "DATE": ""
+    },
+    {
+      "CLASS": "/EAS/ANNEX_FEATURE",
+      "NAME": "SAVE_GTYP_BE_AKTIV",
+      "DESCRIPTION": "AGILAT-6675: Aussteuerung per Sachbearbeiterentscheidung, wenn Gerätedaten im Customizing nicht vorhanden",
+      "DEPENDENCIES": [
+        {
+          "CLASS": "/EAS/ANNEX_FEATURE",
+          "NAME": "SAVE_GTYP_AKTIV"
+        }
+      ],
+      "CURRENTSTATE": false,
+      "DATE": ""
+    },
+    {
+      "CLASS": "/EAS/ANNEX_FEATURE",
+      "NAME": "SAVE_ZUSATZ_GER",
+      "DESCRIPTION": "AGILAT-6574: Automatische Übernahme Zusatzgeräte aus der Bestätigung der Netzanmeldung",
+      "DEPENDENCIES": [
+        {
+          "CLASS": "/EAS/ANNEX_FEATURE",
+          "NAME": "SAVE_GTYP_BE_AKTIV"
+        },
+        {
+          "CLASS": "/EAS/ANNEX_FEATURE",
+          "NAME": "SAVE_GTYP_AKTIV"
+        }
+      ],
+      "CURRENTSTATE": false,
+      "DATE": ""
+    },
+    {
+      "CLASS": "/EAS/ANNEX_FEATURE",
+      "NAME": "SPER_STATUS_GW",
+      "DESCRIPTION": "AGILAT-10011: eing. Gerätewechsel: Statustabelle sperren bei eing. Zählerständen",
+      "DEPENDENCIES": [ ],
+      "CURRENTSTATE": false,
+      "DATE": ""
+    },
+    {
+      "CLASS": "/EAS/ANNEX_FEATURE",
+      "NAME": "VERARBETUNG_MSC_Z27_EING",
+      "DESCRIPTION": "AGILAT-10283: Empfang Bewegungsdaten im Kalenderjahr vor Lieferbeginn",
+      "DEPENDENCIES": [ ],
+      "CURRENTSTATE": false,
+      "DATE": ""
+    },
+    {
+      "CLASS": "/EAS/ANNEX_FEATURE",
+      "NAME": "ZAEHLERSTAND_PFLEGEN_TRG",
+      "DESCRIPTION": "AGILAT-7849: Zählerstand manuell pflegen können",
+      "DEPENDENCIES": [ ],
+      "CURRENTSTATE": false,
+      "DATE": ""
+    },
+    {
+      "CLASS": "/EAS/ANNEX_FEATURE",
+      "NAME": "ZPT_KUNDENGRUPPE",
+      "DESCRIPTION": "AGILAT-10541: Auswertung und Korrektur von Aggregationszählpunkten mit realem Zählpunkt ohne Kundengruppe",
+      "DEPENDENCIES": [ ],
+      "CURRENTSTATE": false,
+      "DATE": ""
+    },
+    {
+      "CLASS": "/EAS/CL_CC_SWITCHES",
+      "NAME": "AGILAT",
+      "DESCRIPTION": "Agilat Schalter - Scrum Team Vertrieb",
+      "DEPENDENCIES": [ ],
+      "CURRENTSTATE": true,
+      "DATE": ""
+    },
+    {
+      "CLASS": "/EAS/CL_CC_SWITCHES",
+      "NAME": "IMA",
+      "DESCRIPTION": "IMA Schalter - Scrum Team Vertrieb",
+      "DEPENDENCIES": [ ],
+      "CURRENTSTATE": true,
+      "DATE": ""
+    },
+    {
+      "CLASS": "/EAS/CRM_CL_FEATURE",
+      "NAME": "NO_STATUS_FOR_ABL_TO_CRM",
+      "DESCRIPTION": "Keinen Fehlerstatus für eine Ablehnung der MAKO an CRM senden.",
+      "DEPENDENCIES": [ ],
+      "CURRENTSTATE": false,
+      "DATE": ""
+    },
+    {
+      "CLASS": "/EAS/CRM_CL_FEATURE",
+      "NAME": "PROZESS_KUENDIGUNG",
+      "DESCRIPTION": "Feature Kündigungsprozess ausführen. Sonst wird ein Workflow angelegt.",
+      "DEPENDENCIES": [ ],
+      "CURRENTSTATE": false,
+      "DATE": ""
+    },
+    {
+      "CLASS": "/EAS/WP_SWITCH_HDW",
+      "NAME": "ABN_GEMEINDERABATT",
+      "DESCRIPTION": "Gemeinderabatt im HDW",
+      "DEPENDENCIES": [ ],
+      "CURRENTSTATE": true,
+      "DATE": ""
+    },
+    {
+      "CLASS": "/EAS/WP_SWITCH_HDW",
+      "NAME": "ABN_TARIFE",
+      "DESCRIPTION": "Abnahmestellenbezogene Tarife auf HDW",
+      "DEPENDENCIES": [ ],
+      "CURRENTSTATE": true,
+      "DATE": ""
+    },
+    {
+      "CLASS": "/EAS/WP_SWITCH_HDW",
+      "NAME": "DEL_WORK_PT_MEHRF_VERARB",
+      "DESCRIPTION": "DEL_WORK_PT mehrfache Ticketverarbeitung unterbinden",
+      "DEPENDENCIES": [ ],
+      "CURRENTSTATE": false,
+      "DATE": ""
+    },
+    {
+      "CLASS": "/EAS/WP_SWITCH_HDW",
+      "NAME": "EXPAND_MAKO",
+      "DESCRIPTION": "Anpassungen HDW GUI: Marktkommunikation wird ausklappbar",
+      "DEPENDENCIES": [ ],
+      "CURRENTSTATE": false,
+      "DATE": ""
+    },
+    {
+      "CLASS": "/EAS/WP_SWITCH_HDW",
+      "NAME": "GUI_ANZEIGE_ADR_READ_ONLY",
+      "DESCRIPTION": "AGILAT-10479 Geänderte Anzeige der Adresse UTILMD_130 READONLY. Angelegt: 11.01.2016",
+      "DEPENDENCIES": [ ],
+      "CURRENTSTATE": false,
+      "DATE": ""
+    },
+    {
+      "CLASS": "/EAS/WP_SWITCH_HDW",
+      "NAME": "HDW_LW_FILTER",
+      "DESCRIPTION": "SOP FM 33767: LW werden bei der Anzeige im HDW nicht richtig berücksichtigt",
+      "DEPENDENCIES": [ ],
+      "CURRENTSTATE": true,
+      "DATE": ""
+    },
+    {
+      "CLASS": "/EAS/WP_SWITCH_HDW",
+      "NAME": "HDW_MELDUNG_DOPPEL_EINZUG",
+      "DESCRIPTION": "FM-34190: Zeigt Fehlermeldungen wenn Einzug für SAB-Vertrag doppelt erfasst wird",
+      "DEPENDENCIES": [ ],
+      "CURRENTSTATE": false,
+      "DATE": ""
+    },
+    {
+      "CLASS": "/EAS/WP_SWITCH_HDW",
+      "NAME": "HDW_SHOW_ERROR_LOG_TARIFE",
+      "DESCRIPTION": "FM-34140: Zeigt Fehlermeldungen beim Hinzufügen einer neuen Zeile",
+      "DEPENDENCIES": [ ],
+      "CURRENTSTATE": false,
+      "DATE": ""
+    },
+    {
+      "CLASS": "/EAS/WP_SWITCH_HDW",
+      "NAME": "HDW_VBRART_WAERME",
+      "DESCRIPTION": "SOP FM 33724: Verbrauchsart 8 für Tarife werden überschrieben",
+      "DEPENDENCIES": [ ],
+      "CURRENTSTATE": false,
+      "DATE": ""
+    },
+    {
+      "CLASS": "/EAS/WP_SWITCH_HDW",
+      "NAME": "KEIN_ABSCHLAG_POPUP",
+      "DESCRIPTION": "Popup für keinen Abschlag auf Vorvertrag",
+      "DEPENDENCIES": [ ],
+      "CURRENTSTATE": false,
+      "DATE": ""
+    },
+    {
+      "CLASS": "/EAS/WP_SWITCH_HDW",
+      "NAME": "NO_ABSCHLAG",
+      "DESCRIPTION": "Anpassungen fuer kein Abschlag im Vorvertrag",
+      "DEPENDENCIES": [ ],
+      "CURRENTSTATE": false,
+      "DATE": ""
+    },
+    {
+      "CLASS": "/EAS/WP_SWITCH_HDW",
+      "NAME": "PAUSCHALANLAGEN",
+      "DESCRIPTION": "AGILAT-10198 Pauschalanlagen anzeigen und verarbeiten.",
+      "DEPENDENCIES": [ ],
+      "CURRENTSTATE": false,
+      "DATE": ""
+    },
+    {
+      "CLASS": "/EAS/WP_SWITCH_HDW",
+      "NAME": "POSITIONSNR_GERAETEBEZ_TARIFE",
+      "DESCRIPTION": "",
+      "DEPENDENCIES": [ ],
+      "CURRENTSTATE": false,
+      "DATE": ""
+    },
+    {
+      "CLASS": "/EAS/WP_SWITCH_HDW",
+      "NAME": "RV_VERTRAEGE",
+      "DESCRIPTION": "Rahmenvertragszuordnungen auf HDW",
+      "DEPENDENCIES": [ ],
+      "CURRENTSTATE": false,
+      "DATE": ""
+    },
+    {
+      "CLASS": "/EAS/WP_SWITCH_HDW",
+      "NAME": "TARIF_INITIAL_BISDAT",
+      "DESCRIPTION": "SOLMAN ???:Ursprüngliches GLBISDAT bei Tarifvorschlag",
+      "DEPENDENCIES": [ ],
+      "CURRENTSTATE": false,
+      "DATE": ""
+    },
+    {
+      "CLASS": "/EAS/WP_SWITCH_HDW",
+      "NAME": "TRIGGER_KOP_ABLS",
+      "DESCRIPTION": "SOP FM 33894: Korrektur für Fehler der das kopieren von Ableseständen verhindert.",
+      "DEPENDENCIES": [ ],
+      "CURRENTSTATE": false,
+      "DATE": ""
+    },
+    {
+      "CLASS": "/EAS/WP_SWITCH_HDW",
+      "NAME": "UEBERNEHME_ZEBGH",
+      "DESCRIPTION": "AGILAT-7464 Bezugsgrößenhistorie aus Vorvertrag übernehmen.",
+      "DEPENDENCIES": [ ],
+      "CURRENTSTATE": true,
+      "DATE": ""
+    },
+    {
+      "CLASS": "/EAS/WP_SWITCH_HDW",
+      "NAME": "WF_KEINE_PROGNOSE",
+      "DESCRIPTION": "SOP FM 33782: Bei fehlendem Feld Prognosemenge wird kein WF erzeugt",
+      "DEPENDENCIES": [ ],
+      "CURRENTSTATE": false,
+      "DATE": ""
+    },
+    {
+      "CLASS": "/EAS/XX_FEATURE",
+      "NAME": "AN_VORGANGSPOOL_V3",
+      "DESCRIPTION": "Dritte Version des Vorgangspools (noch neuer als der neue).",
+      "DEPENDENCIES": [
+        {
+          "CLASS": "/EAS/XX_FEATURE",
+          "NAME": "CC_KONTAKTMANAGEMENT"
+        }
+      ],
+      "CURRENTSTATE": false,
+      "DATE": ""
+    },
+    {
+      "CLASS": "/EAS/XX_FEATURE",
+      "NAME": "CC_KONTAKTMANAGEMENT",
+      "DESCRIPTION": "Neues Kontaktmanagement in der Kundenübersicht.",
+      "DEPENDENCIES": [
+        {
+          "CLASS": "/EAS/XX_FEATURE",
+          "NAME": "AN_VORGANGSPOOL_V3"
+        }
+      ],
+      "CURRENTSTATE": false,
+      "DATE": ""
+    },
+    {
+      "CLASS": "/EAS/XX_FEATURE",
+      "NAME": "KK_SEPA_AKTIV",
+      "DESCRIPTION": "Kontokorrent: SEPA aktiv",
+      "DEPENDENCIES": [ ],
+      "CURRENTSTATE": false,
+      "DATE": "20160101"
+    },
+    {
+      "CLASS": "/EAS/YY_FEATURE",
+      "NAME": "AR_QUICKFIND_V2",
+      "DESCRIPTION": "Neue Quickfind-Schnittstelle aktiv.",
+      "DEPENDENCIES": [
+        {
+          "CLASS": "/EAS/XX_FEATURE",
+          "NAME": "KK_SEPA_AKTIV"
+        },
+        {
+          "CLASS": "/EAS/XX_FEATURE",
+          "NAME": "AN_VORGANGSPOOL_V3"
+        },
+        {
+          "CLASS": "/EAS/XX_FEATURE",
+          "NAME": "CC_KONTAKTMANAGEMENT"
+        }
+      ],
+      "CURRENTSTATE": false,
+      "DATE": ""
+    }
+  ]
+}
