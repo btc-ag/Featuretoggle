@@ -4,6 +4,8 @@ A simple, lightweight feature toggle framework for ABAP
 ## What is it?
 With this framework you can toggle features in ABAP-Code at runtime. This enables you to continuously deliver (potentially unfinished) Features in a deactivated state into the production system. This repository includes the ABAP backend and a UI5 GUI to manage toggle states.
 
+![Featuretoggle Gui](doc/gui.png)
+
 ## Requirements
 * SAP 7.4
 * [abapGit](https://github.com/larshp/abapGit)
@@ -15,7 +17,7 @@ With this framework you can toggle features in ABAP-Code at runtime. This enable
 3. Toggle feature via the transaktion `z_sy_feature` (opens UI5 frontend)
 4. Check if feature is enabled by checking if `z_sy_feature=>feature_xx = abap_true` 
 
-:warning: features should never be enabled in production system!
+:warning: Features should never be enabled in production system!
 
 ### Examples
 see /examples
@@ -31,6 +33,7 @@ see /examples
 1. Checkout/clone subfolder /src/abap/ via [abapGit](https://github.com/larshp/abapGit)
 2. Check transaction `SICF` if node `/default_host/sap/bc/sy_feature` was created
 3. Activate node `/default_host/sap/bc/sy_feature`
+4. Check if feature is enabled by checking if `z_sy_feature=>feature_xx = abap_true`
 
 
 ### Installation UI5 Frontend 
