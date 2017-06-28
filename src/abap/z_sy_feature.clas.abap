@@ -17,7 +17,7 @@ ENDCLASS.
 CLASS z_sy_feature IMPLEMENTATION.
 
   METHOD class_constructor.
-    "new /eas/sy_cl_feature_loader( new /eas/sy_feature( ) )->loadFeatureToggles( ).
+    "new z_sy_cl_feature_loader( new z_sy_feature( ) )->loadFeatureToggles( ).
   ENDMETHOD.
 
 ENDCLASS.
