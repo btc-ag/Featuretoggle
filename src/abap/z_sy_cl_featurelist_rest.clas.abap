@@ -6,9 +6,9 @@ CLASS z_sy_cl_featurelist_rest DEFINITION
 
   PUBLIC SECTION.
 
-    CONSTANTS class_name TYPE seoclsname VALUE `Z_SY_CL_FEATURELIST_REST` ##NO_TEXT.
-    CONSTANTS c_devclass TYPE zeben-devclass VALUE 'Z_SY_FEATURETOGGLE' ##NO_TEXT.
-    CONSTANTS c_repname_put TYPE zeben-name VALUE 'PUT_TOGGLES' ##NO_TEXT.
+    CONSTANTS class_name    TYPE seoclsname VALUE `Z_SY_CL_FEATURELIST_REST` ##NO_TEXT.
+    CONSTANTS c_devclass    TYPE devclass   VALUE 'Z_SY_FEATURETOGGLE' ##NO_TEXT.
+    CONSTANTS c_repname_put TYPE string     VALUE 'PUT_TOGGLES' ##NO_TEXT.
 
     METHODS if_rest_resource~get REDEFINITION .
     METHODS if_rest_resource~put REDEFINITION .
