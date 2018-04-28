@@ -5,7 +5,7 @@
    <VSEOCLASS>
     <CLSNAME>Z_SY_CL_FEATURECLASS_ACCESS</CLSNAME>
     <VERSION>1</VERSION>
-    <LANGU>D</LANGU>
+    <LANGU>E</LANGU>
     <DESCRIPT>Zugriff auf die Feature-Attribute einer Feature-Toggle-Klass</DESCRIPT>
     <EXPOSURE>2</EXPOSURE>
     <STATE>1</STATE>
@@ -14,7 +14,6 @@
     <FIXPT>X</FIXPT>
     <UNICODE>X</UNICODE>
    </VSEOCLASS>
-   <TPOOL/>
   </asx:values>
  </asx:abap>
 </abapGit>
