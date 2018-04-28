@@ -1,4 +1,4 @@
-REPORT Z_sy_del_features MESSAGE-ID  Z_sy
+REPORT z_sy_del_features MESSAGE-ID  z_sy
                 LINE-SIZE   128
                 LINE-COUNT  50.
 
@@ -19,14 +19,14 @@ REPORT Z_sy_del_features MESSAGE-ID  Z_sy
 *        I N T E R N E  D A T E N F E L D E R                          *
 *----------------------------------------------------------------------*
 
- DATA: gt_data        TYPE STANDARD TABLE OF zsy_tfeature.
- DATA: gs_data        TYPE zsy_tfeature.
+DATA: gt_data        TYPE STANDARD TABLE OF zsy_tfeature.
+DATA: gs_data        TYPE zsy_tfeature.
 
 *----------------------------------------------------------------------*
 *        A U S W A H L K R I T E R I E N  SELEKTIONSBILD FESTLEGEN     *
 *----------------------------------------------------------------------*
 SELECTION-SCREEN BEGIN OF BLOCK w_block_001
-                 WITH FRAME TITLE text-001.
+                 WITH FRAME TITLE TEXT-001.
 
 SELECT-OPTIONS: so_cla    FOR gs_data-class.
 SELECT-OPTIONS: so_fea    FOR gs_data-feature.
@@ -36,10 +36,10 @@ SELECTION-SCREEN END   OF BLOCK w_block_001.
 
 
 SELECTION-SCREEN BEGIN OF BLOCK w_block_002
-                 WITH FRAME TITLE text-002.
+                 WITH FRAME TITLE TEXT-002.
 
-PARAMETERS:     pa_show   RADIOBUTTON GROUP cntr default 'X',
-                pa_dele   RADIOBUTTON GROUP cntr .
+PARAMETERS: pa_show RADIOBUTTON GROUP cntr DEFAULT 'X',
+            pa_dele RADIOBUTTON GROUP cntr.
 
 SELECTION-SCREEN END   OF BLOCK w_block_002.
 
@@ -77,16 +77,22 @@ ENDFORM.
 *&      Form  DATEN_ANZEIGEN
 *&---------------------------------------------------------------------*
 FORM daten_anzeigen .
-  DATA: lr_alv   TYPE REF TO zs_cl_alv_grid.
+  DATA: lr_alv   TYPE REF TO cl_salv_table.
 
 * Ausgabe der Daten über ALV
-  CREATE OBJECT lr_alv
-    EXPORTING
-      iv_strucname = 'Z_SY_TFEATURE'.
+  TRY.
+      cl_salv_table=>factory(
+        IMPORTING
+          r_salv_table   = lr_alv    " Basis Class Simple ALV Tables
+        CHANGING
+          t_table        = gt_data
+      ).
+    CATCH cx_salv_msg.    "
+      ASSERT 1 = 2.
+  ENDTRY.
 
-  CALL METHOD lr_alv->display
-    CHANGING
-      ct_daten            = gt_data.
+
+  lr_alv->display( ).
 
 ENDFORM.
 *&---------------------------------------------------------------------*
