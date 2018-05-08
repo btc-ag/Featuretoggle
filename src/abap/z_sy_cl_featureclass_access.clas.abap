@@ -20,7 +20,7 @@ CLASS z_sy_cl_featureclass_access DEFINITION
       IMPORTING
         !i_featurename TYPE z_sy_featurename
       RETURNING
-        VALUE(r_date)  TYPE date .
+        VALUE(r_date)  TYPE z_sy_featuredate .
     METHODS getfeaturedescription
       IMPORTING
         !i_featurename       TYPE z_sy_featurename
@@ -55,7 +55,7 @@ CLASS z_sy_cl_featureclass_access IMPLEMENTATION.
   METHOD getfeaturedate.
 
     DATA(attributename) = |{ i_featurename }_DATE|.
-    FIELD-SYMBOLS <attributeaccess> TYPE date.
+    FIELD-SYMBOLS <attributeaccess> TYPE z_sy_featuredate.
     ASSIGN feature_instance->(attributename) TO <attributeaccess>.
     IF sy-subrc = 0.
       r_date = <attributeaccess>.

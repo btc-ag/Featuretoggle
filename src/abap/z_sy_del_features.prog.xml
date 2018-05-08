@@ -7,13 +7,11 @@
     <STATE>A</STATE>
     <VARCL>X</VARCL>
     <SUBC>1</SUBC>
-    <SECU>ZEBATCH</SECU>
     <RSTAT>K</RSTAT>
     <RLOAD>D</RLOAD>
     <FIXPT>X</FIXPT>
     <UCCHECK>X</UCCHECK>
    </PROGDIR>
-   <DYNPROS/>
    <TPOOL>
     <item>
      <ID>I</ID>

@@ -12,7 +12,7 @@ CLASS z_sy_cl_feature_infrastruct DEFINITION
         description  TYPE string,
         dependencies TYPE z_sy_t_featurereference,
         currentstate TYPE xsdboolean,
-        date         TYPE date,
+        date         TYPE z_sy_featuredate,
       END OF featuredescription .
     TYPES:
       t_featuredescription TYPE STANDARD TABLE OF featuredescription WITH KEY class name .
